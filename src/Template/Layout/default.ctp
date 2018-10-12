@@ -82,6 +82,13 @@ $loguser = $this->request->session()->read('Auth.User');
         <?= $this->fetch('content') ?>
     </div>
     <footer>
+	<li>
+            <?php
+
+    
+   echo $this->Html->link(__(' À propos'), ['controller' => 'App', 'action' => 'about']);
+
+?></li>
     </footer>
 </body>
 </html>
