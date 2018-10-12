@@ -1,0 +1,515 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-10-10 19:27+0000\n"
+"PO-Revision-Date: 2018-10-10 16:11-0400\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: \n"
+"Language: fr_CA\n"
+
+#: Controller/AthletesController.php:41
+msgid "Athlete has been updated."
+msgstr "Athlète a été mis à jour."
+
+#: Controller/AthletesController.php:44
+msgid "Unable to update the athlete."
+msgstr "Impossible de mettre à jour l'athlète."
+
+#: Controller/AthletesController.php:104
+msgid "{0} {1} has been deleted."
+msgstr "{0} {1} a été supprimé."
+
+#: Controller/AthletesController.php:106
+msgid "The athlete was not deleted. Please, try again."
+msgstr "L'athlète n'a pas été supprimé. Si il vous plaît, essayez encore."
+
+#: Controller/AthletesController.php:131
+msgid "Athlete added"
+msgstr "Athlète ajouté"
+
+#: Controller/AthletesController.php:134
+msgid "Can't add the athlete"
+msgstr "Impossible d'ajouter l'athlète"
+
+#: Controller/ResultsController.php:58;84
+msgid "The result has been saved."
+msgstr "Le résultat a été sauvegardé."
+
+#: Controller/ResultsController.php:62;88
+msgid "The result could not be saved. Please, try again."
+msgstr ""
+"Le résultat n'a pas pu être enregistré. S'Ll vous plaît, essayez encore."
+
+#: Controller/ResultsController.php:107
+msgid "The result has been deleted."
+msgstr "Le résultat a été supprimé."
+
+#: Controller/ResultsController.php:109
+msgid "The result could not be deleted. Please, try again."
+msgstr "Le résultat n'a pas pu être supprimé. S'Ll vous plaît, essayez encore."
+
+#: Controller/SportsController.php:55;79
+msgid "The sport has been saved."
+msgstr "Le sport a été sauvegardé."
+
+#: Controller/SportsController.php:59;83
+msgid "The sport could not be saved. Please, try again."
+msgstr "Le sport n'a pas pu être enregistré. S'Ll vous plaît, essayez encore."
+
+#: Controller/SportsController.php:100
+msgid "The sport has been deleted."
+msgstr "Le sport a été supprimé."
+
+#: Controller/SportsController.php:102
+msgid "The sport could not be deleted. Please, try again."
+msgstr "Le sport n'a pas pu être supprimé. Si il vous plaît, essayez encore."
+
+#: Controller/TagsController.php:55;80
+msgid "The tag has been saved."
+msgstr "Le tag a été sauvegardé."
+
+#: Controller/TagsController.php:59;84
+msgid "The tag could not be saved. Please, try again."
+msgstr "Le sport n'a pas pu être enregistré. Si il vous plaît, essayez encore."
+
+#: Controller/TagsController.php:102
+msgid "The tag has been deleted."
+msgstr "Le tag a été supprimé."
+
+#: Controller/TagsController.php:104
+msgid "The tag could not be deleted. Please, try again."
+msgstr "Le tag n'a pas pu être supprimé. Si il vous plaît, essayez encore."
+
+#: Controller/UsersController.php:62;86
+msgid "The user has been saved."
+msgstr "L'utilisateur a été sauvegardé."
+
+#: Controller/UsersController.php:66;90
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+"L'utilisateur n'a pas pu être enregistré. Si il vous plaît, essayez encore."
+
+#: Controller/UsersController.php:107
+msgid "The user has been deleted."
+msgstr "L'utilisateur a été supprimé."
+
+#: Controller/UsersController.php:109
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+"L'utilisateur n'a pas pu être supprimé. Si il vous plaît, essayez encore."
+
+#: Controller/WinnersController.php:55;79
+msgid "The winner has been saved."
+msgstr "Le gagnant a été sauvegardé."
+
+#: Controller/WinnersController.php:59;83
+msgid "The winner could not be saved. Please, try again."
+msgstr ""
+"Le gagnant n'a pas pu être enregistré. Si il vous plaît, essayez encore."
+
+#: Controller/WinnersController.php:100
+msgid "The winner has been deleted."
+msgstr "Le gagnant a été supprimé."
+
+#: Controller/WinnersController.php:102
+msgid "The winner could not be deleted. Please, try again."
+msgstr "Le gagnant n'a pas pu être supprimé. Si il vous plaît, essayez encore."
+
+#: Template/Athletes/add.ctp:9 Template/Athletes/edit.ctp:9
+#: Template/Athletes/index.ctp:10 Template/Athletes/view.ctp:9;58
+#: Template/Results/add.ctp:9 Template/Results/edit.ctp:9
+#: Template/Results/index.ctp:9;28 Template/Results/view.ctp:9
+#: Template/Sports/add.ctp:9 Template/Sports/edit.ctp:9
+#: Template/Sports/index.ctp:9;24 Template/Sports/view.ctp:9;49
+#: Template/Tags/add.ctp:9 Template/Tags/edit.ctp:9
+#: Template/Tags/index.ctp:9;24 Template/Tags/view.ctp:9
+#: Template/Users/add.ctp:9 Template/Users/edit.ctp:9
+#: Template/Users/index.ctp:9;23 Template/Users/view.ctp:9
+#: Template/Winners/add.ctp:9 Template/Winners/edit.ctp:9
+#: Template/Winners/index.ctp:9;23 Template/Winners/view.ctp:9
+msgid "Actions"
+msgstr "Actions"
+
+#: Template/Athletes/add.ctp:10 Template/Athletes/edit.ctp:16
+#: Template/Athletes/view.ctp:12 Template/Results/add.ctp:11
+#: Template/Results/edit.ctp:17 Template/Results/index.ctp:11
+#: Template/Results/view.ctp:14 Template/Tags/add.ctp:11
+#: Template/Tags/edit.ctp:17 Template/Tags/index.ctp:11
+#: Template/Tags/view.ctp:14
+msgid "List Athletes"
+msgstr "Listes des athlètes"
+
+#: Template/Athletes/add.ctp:11 Template/Athletes/edit.ctp:17
+#: Template/Athletes/index.ctp:14 Template/Athletes/view.ctp:14
+#: Template/Tags/add.ctp:10 Template/Tags/edit.ctp:16 Template/Tags/view.ctp:12
+msgid "List Tags"
+msgstr "Liste de Tags"
+
+#: Template/Athletes/add.ctp:12 Template/Athletes/edit.ctp:18
+#: Template/Athletes/index.ctp:15 Template/Athletes/view.ctp:15
+#: Template/Tags/index.ctp:10 Template/Tags/view.ctp:13
+msgid "New Tag"
+msgstr "Nouveau Tag"
+
+#: Template/Athletes/add.ctp:18
+msgid "Add Athlete"
+msgstr "Ajouter un Athlète"
+
+#: Template/Athletes/add.ctp:28 Template/Athletes/edit.ctp:35
+#: Template/Results/add.ctp:28 Template/Results/edit.ctp:33
+#: Template/Sports/add.ctp:23 Template/Sports/edit.ctp:29
+#: Template/Tags/add.ctp:24 Template/Tags/edit.ctp:30 Template/Users/add.ctp:22
+#: Template/Users/edit.ctp:28 Template/Winners/add.ctp:26
+#: Template/Winners/edit.ctp:32
+msgid "Submit"
+msgstr "Confirmer"
+
+#: Template/Athletes/edit.ctp:11 Template/Athletes/view.ctp:70
+#: Template/Results/edit.ctp:11 Template/Results/index.ctp:43
+#: Template/Sports/edit.ctp:11 Template/Sports/index.ctp:37
+#: Template/Sports/view.ctp:62 Template/Tags/edit.ctp:11
+#: Template/Tags/index.ctp:37 Template/Users/edit.ctp:11
+#: Template/Users/index.ctp:37 Template/Winners/edit.ctp:11
+#: Template/Winners/index.ctp:37
+msgid "Delete"
+msgstr "Supprimer"
+
+#: Template/Athletes/edit.ctp:13 Template/Athletes/view.ctp:11;70
+#: Template/Results/edit.ctp:13 Template/Results/index.ctp:43
+#: Template/Results/view.ctp:11 Template/Sports/edit.ctp:13
+#: Template/Sports/index.ctp:37 Template/Sports/view.ctp:11;62
+#: Template/Tags/edit.ctp:13 Template/Tags/index.ctp:37
+#: Template/Tags/view.ctp:11 Template/Users/edit.ctp:13
+#: Template/Users/index.ctp:37 Template/Users/view.ctp:11
+#: Template/Winners/edit.ctp:13 Template/Winners/index.ctp:37
+#: Template/Winners/view.ctp:11
+msgid "Are you sure you want to delete # {0}?"
+msgstr "êtes-vous sur de supprimer # {0}?"
+
+#: Template/Athletes/edit.ctp:24 Template/Athletes/view.ctp:10
+msgid "Edit Athlete"
+msgstr "Modifier Athlète"
+
+#: Template/Athletes/index.ctp:12 Template/Users/add.ctp:10
+#: Template/Users/edit.ctp:16 Template/Users/view.ctp:12
+msgid "List Users"
+msgstr "Liste d'utilisateurs"
+
+#: Template/Athletes/index.ctp:13 Template/Users/index.ctp:10
+#: Template/Users/view.ctp:13
+msgid "New User"
+msgstr "Nouvel utilisateur"
+
+#: Template/Athletes/index.ctp:16 Template/Winners/add.ctp:10
+#: Template/Winners/edit.ctp:16 Template/Winners/view.ctp:12
+msgid "List Winners"
+msgstr "Liste des gagnants"
+
+#: Template/Athletes/index.ctp:17 Template/Winners/index.ctp:10
+#: Template/Winners/view.ctp:13
+msgid "New Winner"
+msgstr "Nouvel Gagnant"
+
+#: Template/Athletes/index.ctp:18 Template/Results/add.ctp:10
+#: Template/Results/edit.ctp:16 Template/Results/view.ctp:12
+#: Template/Sports/add.ctp:11 Template/Sports/edit.ctp:17
+#: Template/Sports/index.ctp:11 Template/Sports/view.ctp:14
+msgid "List Results"
+msgstr "Listes des résultats"
+
+#: Template/Athletes/index.ctp:19 Template/Results/index.ctp:10
+#: Template/Results/view.ctp:13 Template/Sports/add.ctp:12
+#: Template/Sports/edit.ctp:18 Template/Sports/index.ctp:12
+#: Template/Sports/view.ctp:15
+msgid "New Result"
+msgstr "Nouvel résultat"
+
+#: Template/Athletes/index.ctp:25 Template/Athletes/view.ctp:22
+#: Template/Tags/view.ctp:44
+msgid "First Name"
+msgstr "Prénom"
+
+#: Template/Athletes/index.ctp:26 Template/Athletes/view.ctp:26;55
+#: Template/Tags/view.ctp:22;45
+msgid "Last Name"
+msgstr "Nom"
+
+#: Template/Athletes/index.ctp:27 Template/Athletes/view.ctp:30
+#: Template/Tags/view.ctp:46
+msgid "Gender"
+msgstr "Sexe"
+
+#: Template/Athletes/index.ctp:29
+msgid "Birth date"
+msgstr "Date de naissance"
+
+#: Template/Athletes/index.ctp:30 Template/Athletes/view.ctp:40;56
+#: Template/Results/view.ctp:40 Template/Sports/view.ctp:30;47
+#: Template/Tags/view.ctp:30;49 Template/Users/view.ctp:32
+msgid "Created"
+msgstr "Crée"
+
+#: Template/Athletes/index.ctp:31
+msgid "Action"
+msgstr "Action"
+
+#: Template/Athletes/index.ctp:71 Template/Results/index.ctp:51
+#: Template/Sports/index.ctp:45 Template/Tags/index.ctp:45
+#: Template/Users/index.ctp:45 Template/Winners/index.ctp:45
+msgid "first"
+msgstr "début"
+
+#: Template/Athletes/index.ctp:72 Template/Results/index.ctp:52
+#: Template/Sports/index.ctp:46 Template/Tags/index.ctp:46
+#: Template/Users/index.ctp:46 Template/Winners/index.ctp:46
+msgid "previous"
+msgstr "précèdent "
+
+#: Template/Athletes/index.ctp:74 Template/Results/index.ctp:54
+#: Template/Sports/index.ctp:48 Template/Tags/index.ctp:48
+#: Template/Users/index.ctp:48 Template/Winners/index.ctp:48
+msgid "next"
+msgstr "prochain"
+
+#: Template/Athletes/index.ctp:75 Template/Results/index.ctp:55
+#: Template/Sports/index.ctp:49 Template/Tags/index.ctp:49
+#: Template/Users/index.ctp:49 Template/Winners/index.ctp:49
+msgid "last"
+msgstr "dernier"
+
+#: Template/Athletes/index.ctp:77 Template/Results/index.ctp:57
+#: Template/Sports/index.ctp:51 Template/Tags/index.ctp:51
+#: Template/Users/index.ctp:51 Template/Winners/index.ctp:51
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+msgstr ""
+"Page {{page}} de {{pages}}, montrant {{current}} les infos de {{count}} au "
+"totale"
+
+#: Template/Athletes/view.ctp:11
+msgid "Delete Athlete"
+msgstr "Supprimer Athlète "
+
+#: Template/Athletes/view.ctp:13 Template/Results/add.ctp:12
+#: Template/Results/edit.ctp:18 Template/Results/index.ctp:12
+#: Template/Results/view.ctp:15 Template/Tags/add.ctp:12
+#: Template/Tags/edit.ctp:18 Template/Tags/index.ctp:12
+#: Template/Tags/view.ctp:15
+msgid "New Athlete"
+msgstr "Nouvel Athlète "
+
+#: Template/Athletes/view.ctp:36 Template/Tags/view.ctp:47
+msgid "Birth Date"
+msgstr "Date de naissance"
+
+#: Template/Athletes/view.ctp:44;57 Template/Results/view.ctp:44
+#: Template/Sports/view.ctp:34;48 Template/Tags/view.ctp:34;50
+#: Template/Users/view.ctp:36
+msgid "Modified"
+msgstr "Modifier"
+
+#: Template/Athletes/view.ctp:49
+msgid "Related Tags"
+msgstr "Tags reliés"
+
+#: Template/Athletes/view.ctp:54
+msgid "Title"
+msgstr "Titre"
+
+#: Template/Athletes/view.ctp:68 Template/Results/index.ctp:41
+#: Template/Sports/index.ctp:35 Template/Sports/view.ctp:60
+#: Template/Tags/index.ctp:35 Template/Users/index.ctp:35
+#: Template/Winners/index.ctp:35 View/Helper/PaginatorHelper.php:1212
+msgid "View"
+msgstr "Voir"
+
+#: Template/Athletes/view.ctp:69 Template/Results/index.ctp:42
+#: Template/Sports/index.ctp:36 Template/Sports/view.ctp:61
+#: Template/Tags/index.ctp:36 Template/Users/index.ctp:36
+#: Template/Winners/index.ctp:36
+msgid "Edit"
+msgstr "Modifier"
+
+#: Template/Layout/default.ctp:41
+msgid "Home"
+msgstr "Accueil"
+
+#: Template/Layout/default.ctp:52
+msgid "New Account"
+msgstr "Nouveau compte"
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr "Erreur"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "Retour"
+
+#: Template/Results/add.ctp:13 Template/Results/edit.ctp:19
+#: Template/Results/index.ctp:13 Template/Results/view.ctp:16
+#: Template/Sports/add.ctp:10 Template/Sports/edit.ctp:16
+#: Template/Sports/view.ctp:12
+msgid "List Sports"
+msgstr "Liste des sports"
+
+#: Template/Results/add.ctp:14 Template/Results/edit.ctp:20
+#: Template/Results/index.ctp:14 Template/Results/view.ctp:17
+#: Template/Sports/index.ctp:10 Template/Sports/view.ctp:13
+msgid "New Sport"
+msgstr "Nouvel sport"
+
+#: Template/Results/add.ctp:20
+msgid "Add Result"
+msgstr "Ajouter un Résultat"
+
+#: Template/Results/edit.ctp:26 Template/Results/view.ctp:10
+msgid "Edit Result"
+msgstr "Modifier un résultat"
+
+#: Template/Results/index.ctp:18
+msgid "Results"
+msgstr "Résultats"
+
+#: Template/Results/view.ctp:11
+msgid "Delete Result"
+msgstr "Supprimer un Résultat "
+
+#: Template/Results/view.ctp:24
+msgid "Athlete"
+msgstr "Athlète"
+
+#: Template/Results/view.ctp:28
+msgid "Sport"
+msgstr "Sport"
+
+#: Template/Results/view.ctp:32 Template/Sports/view.ctp:46
+msgid "Medal Color"
+msgstr "Médaille de"
+
+#: Template/Results/view.ctp:36 Template/Sports/view.ctp:26;43
+#: Template/Tags/view.ctp:26;43 Template/Users/view.ctp:28
+#: Template/Winners/view.ctp:28
+msgid "Id"
+msgstr "Id"
+
+#: Template/Sports/add.ctp:18
+msgid "Add Sport"
+msgstr "Ajouter un sport"
+
+#: Template/Sports/edit.ctp:24 Template/Sports/view.ctp:10
+msgid "Edit Sport"
+msgstr "Modifier un sport"
+
+#: Template/Sports/index.ctp:16
+msgid "Sports"
+msgstr "Sports"
+
+#: Template/Sports/view.ctp:11
+msgid "Delete Sport"
+msgstr "Supprimer un sport"
+
+#: Template/Sports/view.ctp:22
+msgid "Sport Name"
+msgstr "Sport"
+
+#: Template/Sports/view.ctp:39
+msgid "Related Results"
+msgstr "Résultats reliés"
+
+#: Template/Sports/view.ctp:44
+msgid "Athlete Id"
+msgstr "Id de l'Athlète"
+
+#: Template/Sports/view.ctp:45
+msgid "Sport Id"
+msgstr "Id du sport"
+
+#: Template/Tags/add.ctp:18
+msgid "Add Tag"
+msgstr "Ajouter un tag"
+
+#: Template/Tags/edit.ctp:24 Template/Tags/view.ctp:10
+msgid "Edit Tag"
+msgstr "Modifier un tag"
+
+#: Template/Tags/index.ctp:16
+msgid "Tags"
+msgstr "Tags"
+
+#: Template/Tags/view.ctp:11
+msgid "Delete Tag"
+msgstr "Supprimer un Tag"
+
+#: Template/Tags/view.ctp:39
+msgid "Related Athletes"
+msgstr "Athlètes reliés"
+
+#: Template/Tags/view.ctp:48
+msgid "Slug"
+msgstr "Slug"
+
+#: Template/Users/add.ctp:16
+msgid "Sign up"
+msgstr "Se connecter"
+
+#: Template/Users/edit.ctp:22 Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr "Modifier utilisateur"
+
+#: Template/Users/index.ctp:14
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr "Supprimer utilisateur"
+
+#: Template/Users/view.ctp:20
+msgid "Email"
+msgstr "Email"
+
+#: Template/Users/view.ctp:24
+msgid "Password"
+msgstr "Mot de passe"
+
+#: Template/Winners/add.ctp:16
+msgid "Add Winner"
+msgstr "Ajouter un gagnant"
+
+#: Template/Winners/edit.ctp:22 Template/Winners/view.ctp:10
+msgid "Edit Winner"
+msgstr "Modifier un gagnant"
+
+#: Template/Winners/index.ctp:14
+msgid "Winners"
+msgstr "Gagnants"
+
+#: Template/Winners/view.ctp:11
+msgid "Delete Winner"
+msgstr "Supprimer un gagnant"
+
+#: Template/Winners/view.ctp:20
+msgid "Country Name"
+msgstr "Nom du Pays"
+
+#: Template/Winners/view.ctp:24
+msgid "Host"
+msgstr "Hôte"
+
+#: Template/Winners/view.ctp:32
+msgid "Medal Number"
+msgstr "Nombre de médailles"
+
+#: Template/Winners/view.ctp:36
+msgid "Year"
+msgstr "Année"
