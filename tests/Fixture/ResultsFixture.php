@@ -54,8 +54,8 @@ class ResultsFixture extends TestFixture
                 'athlete_id' => 1,
                 'sport_id' => 1,
                 'medal_color' => 'Lorem ipsum dolor sit amet',
-                'created' => '2018-09-01 04:00:54',
-                'modified' => '2018-09-01 04:00:54'
+                'created' => '2018-10-11 16:35:35',
+                'modified' => '2018-10-11 16:35:35'
             ],
         ];
         parent::init();

@@ -13,6 +13,11 @@ use App\Controller\AppController;
 class SportsController extends AppController
 {
 
+ public function initialize() {
+        parent::initialize();
+		$this->loadComponent('RequestHandler');
+        $this->Auth->allow(['autocomplete', 'findSports', 'add', 'edit', 'delete']);
+    }
     /**
      * Index method
      *
@@ -23,6 +28,10 @@ class SportsController extends AppController
         $sports = $this->paginate($this->Sports);
 
         $this->set(compact('sports'));
+    }
+	
+	 public function autocomplete() {
+        
     }
 
     /**
@@ -104,4 +113,23 @@ class SportsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+	
+	public function findSports() {
+
+        if ($this->request->is('ajax')) {
+
+            $this->autoRender = false;
+            $name = $this->request->query['term'];
+            $results = $this->Sports->find('all', array(
+                'conditions' => array('Sports.name LIKE ' => '%' . $name . '%')
+            ));
+
+            $resultArr = array();
+            foreach ($results as $result) {
+                $resultArr[] = array('label' => $result['name'], 'value' => $result['name']);
+            }
+            echo json_encode($resultArr);
+        }
+    }
+
 }

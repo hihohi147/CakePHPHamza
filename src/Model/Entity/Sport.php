@@ -7,7 +7,7 @@ use Cake\ORM\Entity;
  * Sport Entity
  *
  * @property int $id
- * @property string $sport_name
+ * @property string $name
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
@@ -26,7 +26,7 @@ class Sport extends Entity
      * @var array
      */
     protected $_accessible = [
-        'sport_name' => true,
+        'name' => true,
         'created' => true,
         'modified' => true,
         'results' => true

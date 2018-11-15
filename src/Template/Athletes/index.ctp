@@ -1,4 +1,13 @@
 <?php
+$urlToAthletesAutocompletedemoJson = $this->Url->build([
+    "controller" => "Athletes",
+    "action" => "findAthletes",
+    "_ext" => "json"
+        ]);
+echo $this->Html->scriptBlock('var urlToAutocompleteAction = "' . $urlToAthletesAutocompletedemoJson . '";', ['block' => true]);
+echo $this->Html->script('Athletes/autocomplete', ['block' => 'scriptBottom']);
+?>
+<?php
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Result[]|\Cake\Collection\CollectionInterface $results
@@ -11,8 +20,6 @@
         <li><?= $this->Html->link(__('New Athlete'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Tags'), ['controller' => 'Tags', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Tag'), ['controller' => 'Tags', 'action' => 'add']) ?></li>
 		<li><?= $this->Html->link(__('List Winners'), ['controller' => 'Winners', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Winner'), ['controller' => 'Winners', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Results'), ['controller' => 'Results', 'action' => 'index']) ?></li>
@@ -21,9 +28,14 @@
         <li><?= $this->Html->link(__('New Sport'), ['controller' => 'Sports', 'action' => 'add']) ?></li>
 		 <li><?= $this->Html->link(__('List File'), ['controller' => 'Files', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
+		  <li><?= $this->Html->link(__('List Countries'), ['controller' => 'Countries', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New Country'), ['controller' => 'Countries', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Cities'), ['controller' => 'Cities', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New city'), ['controller' => 'Cities', 'action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="articles index large-9 medium-8 columns content">
+
 <table>
     <tr>
         <th><? echo __('First Name')?></th>
@@ -38,6 +50,7 @@
     <!-- Here is where we iterate through our $athletes query object, printing out article info -->
 
     <?php foreach ($athletes as $athlete): ?>
+	
     <tr>
         <td>
             <?= $this->Html->link($athlete->first_name, ['action' => 'view', $athlete->slug]) ?>
@@ -46,7 +59,15 @@
             <?= $athlete->last_name?>
         </td>    
         <td>
-            <?= $athlete->gender?>
+		<? if ($athlete->gender == 1) {
+    $gender = "M";
+} else {
+    $gender = "F";
+}
+?>
+		<? echo
+		 $gender
+            ?>
         </td>    
         
         <td>

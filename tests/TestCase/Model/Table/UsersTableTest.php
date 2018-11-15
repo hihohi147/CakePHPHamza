@@ -4,6 +4,7 @@ namespace App\Test\TestCase\Model\Table;
 use App\Model\Table\UsersTable;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
+use Cake\Validation\Validator;
 
 /**
  * App\Model\Table\UsersTable Test Case
@@ -59,6 +60,12 @@ class UsersTableTest extends TestCase
     public function testInitialize()
     {
         $this->markTestIncomplete('Not implemented yet.');
+    }
+	
+	 public function testValidateEmail() {
+        $user = $this->Users->find('all')->first()->toArray();
+        $errors = $this->Users->validationDefault(new Validator())->errors($user);
+        $this->assertTrue(empty($errors['email']));
     }
 
     /**

@@ -24,8 +24,8 @@ class FilesTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.files',
-        'app.athletes_files'
+        'app.files'
+       
     ];
 
     /**

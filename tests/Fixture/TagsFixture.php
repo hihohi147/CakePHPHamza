@@ -43,8 +43,8 @@ class TagsFixture extends TestFixture
             [
                 'id' => 1,
                 'last_name' => 'Lorem ipsum dolor ',
-                'created' => '2018-09-02 02:24:49',
-                'modified' => '2018-09-02 02:24:49'
+                'created' => null,
+                'modified' => null
             ],
         ];
         parent::init();

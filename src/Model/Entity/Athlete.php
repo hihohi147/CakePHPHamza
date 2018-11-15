@@ -14,7 +14,7 @@ use Cake\ORM\Entity;
  * @property string $slug
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
- * @property int $country_id
+ * @property int $city_id
  *
  * @property \App\Model\Entity\Tag[] $tags
  */
@@ -38,7 +38,7 @@ class Athlete extends Entity
         'slug' => true,
         'created' => true,
         'modified' => true,
-        'country_id' => true,
+        'city_id' => true,
         'tags' => true
     ];
 }

@@ -23,13 +23,13 @@
     <fieldset>
         <legend><?= __('Edit Athlete') ?></legend>
         <?php
-		$gender = ['1'=>'M','2'=>'F'];
+		$gender = ['1'=>'M','0'=>'F'];
 		
             echo $this->Form->control('first_name');
             echo $this->Form->control('last_name');
            echo $this->Form->control('gender', ['options'=>$gender, 'value'=>$athlete->gender]);
             echo $this->Form->control('birth_date');
-            echo $this->Form->control('tags._ids', ['options' => $tags]);
+          
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

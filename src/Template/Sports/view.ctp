@@ -16,11 +16,11 @@
     </ul>
 </nav>
 <div class="sports view large-9 medium-8 columns content">
-    <h3><?= h($sport->sport_name) ?></h3>
+    <h3><?= h($sport->name) ?></h3>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Sport Name') ?></th>
-            <td><?= h($sport->sport_name) ?></td>
+            <td><?= h($sport->name) ?></td>
         </tr>
         <tr>
 		<p hidden><?= $this->Number->format($sport->id) ?></p>

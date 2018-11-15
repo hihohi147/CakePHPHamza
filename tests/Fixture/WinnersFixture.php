@@ -44,7 +44,7 @@ class WinnersFixture extends TestFixture
                 'id' => 1,
                 'country_name' => 'Lorem ipsum dolor ',
                 'host' => 'Lorem ipsum dolor ',
-                'year' => '2018-10-10',
+                'year' => '2018-10-11',
                 'medal_number' => 1
             ],
         ];

@@ -18,7 +18,7 @@
         <thead>
             <tr>
                 
-                <th scope="col"><?= $this->Paginator->sort('sport_name') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -28,7 +28,7 @@
             <?php foreach ($sports as $sport): ?>
             <tr>
                 <p hidden><?= $this->Number->format($sport->id) ?></p>
-                <td><?= h($sport->sport_name) ?></td>
+                <td><?= h($sport->name) ?></td>
                 <td><?= h($sport->created) ?></td>
                 <td><?= h($sport->modified) ?></td>
                 <td class="actions">

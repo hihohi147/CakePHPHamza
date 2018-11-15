@@ -6,7 +6,27 @@
 <h1 style="text-align:center;">Hamza Ouchrif</h2></br>
 <h2 style="text-align:center;">420-5b7 MO Applications internet.</h3></br>
 <h2 style="text-align:center;">Automne 2018, Collège Montmorency.<h3>
-<p>L'admin a tout les droits</br></br>
+
+<a href=https://github.com/hihohi147/CakePHPHamza>Github</a>
+
+<p>
+TP2</br></br>
+
+admin@hotmail.com mdp: admin</br>
+
+L'autocomplétion en cherchant l'existence d'un sport avec le bouton du menu</br></br>
+
+Les linkedList dans l'ajout d'un Athlete</br></br>
+
+Les tests sans autorisations comme la validation de mail, le boolean masculin ou féminin, la faille xss et 
+le controlleur fonctionnent mais avec autorisations la table Users n'est pas détecter par TableRegistory bizarrement c'est la seul erreur du code</br></br>
+
+<a href=../webroot/coverage/index.html >LE COVERAGE </a></br></br>
+
+
+TP1</br></br>
+
+L'admin a tout les droits</br></br>
 
 Le super User peut modifier et supprimer des athlètes</br></br>
 

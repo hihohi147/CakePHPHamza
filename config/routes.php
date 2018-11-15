@@ -20,9 +20,11 @@
 
 
 use Cake\Core\Plugin;
+use Cake\Routing\RouteBuilder;
 use Cake\Routing\Route\DashedRoute;
 use Cake\Routing\Router;
 
+Router::extensions(['json', 'xml']);
 Router::defaultRouteClass(DashedRoute::class);
 
 // New route we're adding for our tagged action.
@@ -36,7 +38,7 @@ Router::scope(
     }
     );
 
-Router::scope('/', function ($routes) {
+Router::scope('/', function (RouteBuilder $routes) {
     // Connect the default home and /pages/* routes.
     $routes->connect('/', [
         'controller' => 'Athletes',
@@ -48,7 +50,7 @@ Router::scope('/', function ($routes) {
     ]);
     
     // Connect the conventions based default routes.
-    $routes->fallbacks();
+     $routes->fallbacks(DashedRoute::class);
 });
     
-    Plugin::routes();
+   

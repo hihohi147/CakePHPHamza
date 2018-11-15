@@ -9,10 +9,12 @@ class AthletesController extends AppController
     public function initialize()
     {
         parent::initialize();
-        
+	
+        	$this->loadComponent('RequestHandler');
         $this->loadComponent('Paginator');
         $this->loadComponent('Flash'); 
-        $this->Auth->allow(['tags']);
+        $this->Auth->allow(['tags']);+
+		$this->Auth->allow(['autocomplete', 'findSports', 'add', 'edit', 'delete']);
     }
     
     public function index()
@@ -68,6 +70,24 @@ class AthletesController extends AppController
             'athletes' => $athletes,
             'tags' => $tags
         ]);
+    }
+	
+	public function findAthletes() {
+
+        if ($this->request->is('ajax')) {
+
+            $this->autoRender = false;
+            $name = $this->request->query['term'];
+            $results = $this->Athletes->find('all', array(
+                'conditions' => array('Athletes.last_name LIKE ' => '%' . $last_name . '%')
+            ));
+
+            $resultArr = array();
+            foreach ($results as $result) {
+                $resultArr[] = array('label' => $result['last_name'], 'value' => $result['last_name']);
+            }
+            echo json_encode($resultArr);
+        }
     }
     
     public function isAuthorized($user)
@@ -135,10 +155,26 @@ class AthletesController extends AppController
         }
         // Get a list of tags.
         $tags = $this->Athletes->Tags->find('list');
+		
+		
+        $this->loadModel('Countries');
+        $countries = $this->Countries->find('list', ['limit' => 200]);
+
+        
+        $countries = $countries->toArray();
+        reset($countries);
+        $country_id = key($countries);
+
+        
+        $cities = $this->Athletes->Cities->find('list', [
+            'conditions' => ['Cities.country_id' => $country_id],
+        ]);
         
         // Set tags to the view context
         $this->set('tags', $tags);
         $this->set('athlete', $athlete);
+		 $this->set('countries', $countries);
+        $this->set('cities', $cities);
     }
     
 }

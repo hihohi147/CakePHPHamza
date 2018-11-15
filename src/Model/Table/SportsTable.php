@@ -36,7 +36,7 @@ class SportsTable extends Table
         parent::initialize($config);
 
         $this->setTable('sports');
-        $this->setDisplayField('sport_name');
+        $this->setDisplayField('name');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
@@ -59,10 +59,10 @@ class SportsTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->scalar('sport_name')
-            ->maxLength('sport_name', 20)
-            ->requirePresence('sport_name', 'create')
-            ->notEmpty('sport_name');
+            ->scalar('name')
+            ->maxLength('name', 20)
+            ->requirePresence('name', 'create')
+            ->notEmpty('name');
 
         return $validator;
     }

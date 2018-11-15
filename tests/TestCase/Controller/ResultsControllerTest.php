@@ -9,7 +9,8 @@ use Cake\TestSuite\IntegrationTestCase;
  */
 class ResultsControllerTest extends IntegrationTestCase
 {
-
+	 
+	 
     /**
      * Fixtures
      *
@@ -20,6 +21,11 @@ class ResultsControllerTest extends IntegrationTestCase
         'app.athletes',
         'app.sports'
     ];
+	
+		 public function testIsAuthorized()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
 
     /**
      * Test index method
@@ -28,7 +34,7 @@ class ResultsControllerTest extends IntegrationTestCase
      */
     public function testIndex()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+       $this->markTestIncomplete('Not implemented yet.');
     }
 
     /**

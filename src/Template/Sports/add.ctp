@@ -17,7 +17,7 @@
     <fieldset>
         <legend><?= __('Add Sport') ?></legend>
         <?php
-            echo $this->Form->control('sport_name');
+            echo $this->Form->control('name');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

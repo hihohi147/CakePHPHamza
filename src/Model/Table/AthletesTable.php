@@ -44,8 +44,16 @@ class AthletesTable extends Table
 
         $this->addBehavior('Timestamp');
 
+		 $this->belongsTo('Users', [
+            'foreignKey' => 'user_id',
+            'joinType' => 'INNER'
+        ]);
+		
         $this->belongsTo('Countries', [
             'foreignKey' => 'country_id'
+        ]);
+		 $this->belongsTo('Cities', [
+            'foreignKey' => 'city_id'
         ]);
         $this->hasMany('Results', [
             'foreignKey' => 'athlete_id'
@@ -105,8 +113,18 @@ class AthletesTable extends Table
         if ($entity->isNew() && !$entity->slug) {
             $sluggedTitle = Text::slug($entity->last_name);
             $entity->slug = substr($sluggedTitle, 0, 191);
-        }
+        } 
+		$entity->last_name = htmlspecialchars($entity->last_name);
     }
+	
+	public function findMasculin(Query $query, array $options) {
+        $query->where([
+            $this->alias() . '.gender' => 1
+        ]);
+        return $query;
+    }
+	
+	
 	
     /**
      * Returns a rules checker object that will be used for validating

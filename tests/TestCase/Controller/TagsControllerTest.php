@@ -17,8 +17,8 @@ class TagsControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.tags',
-        'app.athletes',
-        'app.athletes_tags'
+        'app.athletes'
+       
     ];
 
     /**

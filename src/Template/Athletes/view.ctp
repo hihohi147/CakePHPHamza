@@ -28,7 +28,17 @@
         </tr>
         <tr>
             <th scope="row"><?= __('Gender') ?></th>
-            <td><?= h($athlete->gender) ?></td>
+               <td>
+		<? if ($athlete->gender == 1) {
+    $gender = "M";
+} else {
+    $gender = "F";
+}
+?>
+		<? echo
+		 $gender
+            ?>
+        </td>  
         </tr>
     
       
@@ -46,7 +56,7 @@
         </tr>
     </table>
     <div class="related">
-        <h4><?= __('Related Tags') ?></h4>
+       
         <?php if (!empty($athlete->tags)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>

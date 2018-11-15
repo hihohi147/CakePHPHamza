@@ -51,6 +51,29 @@ class AthletesTableTest extends TestCase
 
         parent::tearDown();
     }
+	
+	 
+	
+	public function testFindMasculin()  {
+        $query = $this->Athletes->find('masculin');
+        $this->assertInstanceOf('Cake\ORM\Query', $query);
+        $result = $query->hydrate(false)->toArray();
+        $expected = [
+            [
+               'id' => 1,
+                'first_name' => 'Lorem ipsum dolor ',
+                'last_name' => 'Lorem ipsum dolor ',
+                'gender' => 1,
+                'birth_date' => null,
+                'slug' => 'Lorem ipsum dolor sit amet',
+                'created' => null,
+                'modified' => null,
+                'country_id' => 1
+            ],
+           
+        ];
+        $this->assertEquals($expected, $result);
+    }
 
     /**
      * Test initialize method
